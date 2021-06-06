@@ -1,8 +1,7 @@
-public class Testing {
+public class Main {
     private static FriendshipGraph r = new FriendshipGraph();
     public static void main(String[]args){
         initializationFriendshipGraph();
-        System.out.println(r.toString());
     }
 
     public static void initializationFriendshipGraph(){
