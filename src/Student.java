@@ -1,31 +1,52 @@
+import java.util.ArrayList;
+
 public class Student {
-    private int rep;
-    private int dive;
-    private int lunchStart;
+    private String name;
+    private int divingRate;
+    private String lunchTime;
     private int lunchPeriod;
+    ArrayList<Friend> friend = new ArrayList<>();
 
-    public int getRep() {
-        return rep;
+    public Student(String name) {
+        this.name = name;
     }
 
-    public void setRep(int rep) {
-        this.rep = rep;
+    public Student(String name, int divingRate, String lunchTime, int lunchPeriod){
+        this.name = name;
+        this.divingRate = divingRate;
+        this.lunchTime = lunchTime;
+        this.lunchPeriod = lunchPeriod;
     }
 
-    public int getDive() {
-        return dive;
+    public void addFriend(Student p2, int repPoints){
+        Friend f = new Friend(p2, repPoints);
+        friend.add(f);
     }
 
-    public void setDive(int dive) {
-        this.dive = dive;
+
+    /** ====================================== Getter and Setter ====================================*/
+    public String getName() {
+        return name;
     }
 
-    public int getLunchStart() {
-        return lunchStart;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setLunchStart(int lunchStart) {
-        this.lunchStart = lunchStart;
+    public int getDivingRate() {
+        return divingRate;
+    }
+
+    public void setDivingRate(int divingRate) {
+        this.divingRate = divingRate;
+    }
+
+    public String getLunchTime() {
+        return lunchTime;
+    }
+
+    public void setLunchTime(String lunchTime) {
+        this.lunchTime = lunchTime;
     }
 
     public int getLunchPeriod() {
@@ -36,4 +57,11 @@ public class Student {
         this.lunchPeriod = lunchPeriod;
     }
 
+    public ArrayList<Friend> getFriend() {
+        return friend;
+    }
+
+    public void setFriend(ArrayList<Friend> friend) {
+        this.friend = friend;
+    }
 }
