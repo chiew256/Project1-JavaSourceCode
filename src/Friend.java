@@ -11,11 +11,11 @@ public class Friend {
     }
 
     /** ====================================== Getter and Setter ====================================*/
-    public Student getF() {
+    public Student getFriend() {
         return f;
     }
 
-    public void setF(Student f) {
+    public void setFriend(Student f) {
         this.f = f;
     }
 
