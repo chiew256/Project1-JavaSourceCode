@@ -2,7 +2,15 @@ public class Main {
     private static FriendshipGraph graph = new FriendshipGraph();
     public static void main(String[]args){
         initializationFriendshipGraph();
+
+        // ================================= Event 3 =============================
+        System.out.println("------------------------Event 3-----------------------");
+        Event3 e3 = new Event3(graph.getStudent("v10"), graph.getVertex(), false);
+        graph.getStudent("v10").getFriend().stream().forEach(friend -> System.out.println(friend.getFriend().getName() + " " + friend.getRepPoints()));
+
+        // ================================= Event 5 =============================
         Event5 event5 = new Event5();
+        System.out.println("------------------------Event 5-----------------------");
         event5.checKRumour(graph.getStudent("v2"), graph.getStudent("v5"));
     }
 

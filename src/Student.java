@@ -5,6 +5,7 @@ public class Student {
     private int divingRate;
     private String lunchTime;
     private int lunchPeriod;
+    private boolean isVaccinated = false;
     ArrayList<Friend> friend = new ArrayList<>();
 
     public Student(String name) {
@@ -21,6 +22,10 @@ public class Student {
     public void addFriend(Student p2, int repPoints){
         Friend f = new Friend(p2, repPoints);
         friend.add(f);
+    }
+
+    public String toString() {
+        return name;
     }
 
 
@@ -63,5 +68,13 @@ public class Student {
 
     public void setFriend(ArrayList<Friend> friend) {
         this.friend = friend;
+    }
+
+    public boolean isVaccinated() {
+        return isVaccinated;
+    }
+
+    public void setVaccinated(boolean vaccinated) {
+        isVaccinated = vaccinated;
     }
 }
