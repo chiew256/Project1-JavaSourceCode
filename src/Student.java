@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private int divingRate;
     private String lunchTime;
@@ -76,5 +76,15 @@ public class Student {
 
     public void setVaccinated(boolean vaccinated) {
         isVaccinated = vaccinated;
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        if(name.compareTo(o.name) == 0)
+            return 0;
+        else if(name.compareTo(o.name) > 0)
+            return 1;
+        else
+            return -1;
     }
 }

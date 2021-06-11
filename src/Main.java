@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[]args){
         initializationFriendshipGraph();
 
-        System.out.println("================================= Event 1 =============================");
+        /**System.out.println("================================= Event 1 =============================");
         Event1 e1 = new Event1(graph.getStudent("v1"), graph.getStudent("v4"));
         e1.runEvent1();
 
@@ -15,11 +15,19 @@ public class Main {
 
         System.out.println("\n================================= Event 3 =============================");
         Event3 e3 = new Event3(graph.getStudent("v10"), graph.getVertex(), false);
-        graph.getStudent("v10").getFriend().stream().forEach(friend -> System.out.println(friend.getFriend().getName() + " " + friend.getRepPoints()));
+        graph.getStudent("v10").getFriend().stream().forEach(friend -> System.out.println(friend.getFriend().getName() + " " + friend.getRepPoints()));*/
 
-        System.out.println("\n================================= Event 5 =============================");
+        /**System.out.println("\n================================= Event 3 =============================");
+        Event4 e4 = new Event4();
+        e4.runEvent4();*/
+
+        /**System.out.println("\n================================= Event 5 =============================");
         Event5 event5 = new Event5();
-        event5.checkRumour(graph.getStudent("v2"), graph.getStudent("v5"));
+        event5.checkRumour(graph.getStudent("v2"), graph.getStudent("v5"));*/
+
+        System.out.println("\n================================= Event 6 =============================");
+        Event6 e6 = new Event6();
+        e6.runEvent6();
     }
 
     public static void initializationFriendshipGraph(){
