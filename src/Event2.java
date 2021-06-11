@@ -24,7 +24,7 @@ public class Event2{
         if(badMessageOrNot(ans)){
             s1.addFriend(s3, getBToAPoint()*-1);
             System.out.println("During chit-chatting, " + s2.getName() + " spread bad message about " + s1.getName() + " to " + s3.getName());
-            System.out.println("Therefore, " + s3.getName() + " only give negative of the reputation points of (" + s2.getName() + " to " + s1.getName() + ") to " + s1.getName() + " which is " + (getBToAPoint()*-1));
+            System.out.println("Therefore, " + s3.getName() + " only give negative of the reputation points of (" + s2.getName() + " to " + s1.getName() + ") to " + s1.getName() + " which is " + (Math.abs(getBToAPoint())*-1));
         }
         else{
             s1.addFriend(s3, getBToAPoint()/2);

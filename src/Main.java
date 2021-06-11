@@ -13,6 +13,8 @@ public class Main {
         Event2 e2 = new Event2(graph.getStudent("v1"), graph.getStudent("v2"), graph.getStudent("v3"));
         e2.runEvent2();
 
+        Event2 test = new Event2(graph.getStudent("v1"), graph.getStudent("v3"), graph.getStudent("v4"));
+        test.runEvent2();
 
         /**System.out.println("\n================================= Event 3 =============================");
         Event3 e3 = new Event3(graph.getStudent("v10"), graph.getVertex(), false);
