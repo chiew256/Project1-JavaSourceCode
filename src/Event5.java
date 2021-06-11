@@ -8,7 +8,7 @@ public class Event5 {
     private HashMap<Student,Integer> blocked = new HashMap<>();
     private int day = 1;
 
-    public  void checKRumour(Student source, Student crush) {
+    public  void checkRumour(Student source, Student crush) {
         path.clear();
 
         System.out.println(source.getName() + " is the source to spread the rumour");
