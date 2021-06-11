@@ -20,14 +20,14 @@ public class Event2{
         String ans = sc.next();
         System.out.println("Reputation points " + s2.getName() + " to " + s1.getName() + " is " + getBToAPoint());
 
-        s1.addFriend(s3,0);
+        s3.addFriend(s1,0);
         if(badMessageOrNot(ans)){
-            s3.addFriend(s1, getBToAPoint()*-1);
+            s1.addFriend(s3, getBToAPoint()*-1);
             System.out.println("During chit-chatting, " + s2.getName() + " spread bad message about " + s1.getName() + " to " + s3.getName());
             System.out.println("Therefore, " + s3.getName() + " only give negative of the reputation points of (" + s2.getName() + " to " + s1.getName() + ") to " + s1.getName() + " which is " + (getBToAPoint()*-1));
         }
         else{
-            s3.addFriend(s1, getBToAPoint()/2);
+            s1.addFriend(s3, getBToAPoint()/2);
             System.out.println("During chit-chatting, " + s2.getName() + " didn't spread bad message about " + s1.getName() + " to " + s3.getName());
             System.out.println("Therefore, " + s3.getName() + " give half of the reputation points of (" + s2.getName() + " to " + s1.getName() + ") to " + s1.getName() + " which is " + (getBToAPoint()/2));
         }

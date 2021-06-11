@@ -7,13 +7,14 @@ public class Main {
 
         /**System.out.println("================================= Event 1 =============================");
         Event1 e1 = new Event1(graph.getStudent("v1"), graph.getStudent("v4"));
-        e1.runEvent1();
+        e1.runEvent1();*/
 
         System.out.println("\n================================= Event 2 =============================");
         Event2 e2 = new Event2(graph.getStudent("v1"), graph.getStudent("v2"), graph.getStudent("v3"));
         e2.runEvent2();
 
-        System.out.println("\n================================= Event 3 =============================");
+
+        /**System.out.println("\n================================= Event 3 =============================");
         Event3 e3 = new Event3(graph.getStudent("v10"), graph.getVertex(), false);
         graph.getStudent("v10").getFriend().stream().forEach(friend -> System.out.println(friend.getFriend().getName() + " " + friend.getRepPoints()));*/
 
@@ -25,9 +26,9 @@ public class Main {
         Event5 event5 = new Event5();
         event5.checkRumour(graph.getStudent("v2"), graph.getStudent("v5"));*/
 
-        System.out.println("\n================================= Event 6 =============================");
+        /**System.out.println("\n================================= Event 6 =============================");
         Event6 e6 = new Event6();
-        e6.runEvent6();
+        e6.runEvent6();*/
     }
 
     public static void initializationFriendshipGraph(){
