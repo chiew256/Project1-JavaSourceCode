@@ -6,10 +6,15 @@ import java.util.Optional;
 public class HerdImmunity {
     private ArrayList<Student> StudentsToVaccine;
     private ArrayList<Student> students;
+    private int vaccine;
 
     public HerdImmunity(ArrayList<Student> students, int vaccine) {
+        this.vaccine = vaccine;
         StudentsToVaccine = new ArrayList<>(vaccine);
         this.students = new ArrayList<>(List.copyOf(students));
+    }
+
+    public void start() {
         vaccinate(vaccine);
         System.out.println("Students need to vaccine: ");
         System.out.println(StudentsToVaccine.toString());
@@ -45,5 +50,4 @@ public class HerdImmunity {
     public ArrayList<Student> getStudentsToVaccine() {
         return StudentsToVaccine;
     }
-
 }
