@@ -36,6 +36,10 @@ public class Main {
         System.out.println("\n================================= Herd Immunity (Extra Features) =============================");
         HerdImmunity herdImmunity = new HerdImmunity(graph.getVertex(), 3);
         herdImmunity.start();
+
+        System.out.println("\n================================= Six Degrees (Extra Features) =============================");
+        SixDegrees sixdegrees = new SixDegrees(graph);
+        sixdegrees.runSixDegrees();
     }
 
     public static void initializationFriendshipGraph(){

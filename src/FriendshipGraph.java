@@ -11,6 +11,7 @@ public class FriendshipGraph {
     public void addStudent(String name, int divingRate, String lunchTime,int lunchPeriod){
         Student p = new Student(name, divingRate, lunchTime, lunchPeriod);
         vertex.add(p);
+        size++;
     }
 
     public boolean addStudent(String name){
@@ -86,6 +87,15 @@ public class FriendshipGraph {
         }
     }
 
+    public Student getStudent(int index){
+        for (int i = 0; i < vertex.size(); i++) {
+            if(i == index){
+                return vertex.get(i);
+            }
+        }
+        return null;
+    }
+
     /** ====================================== Getter and Setter ====================================*/
     public ArrayList<Student> getVertex() {
         return vertex;
@@ -93,5 +103,13 @@ public class FriendshipGraph {
 
     public void setVertex(ArrayList<Student> vertex) {
         this.vertex = vertex;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 }
