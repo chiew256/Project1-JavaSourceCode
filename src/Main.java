@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[]args){
         initializationFriendshipGraph();
 
-        System.out.println("================================= Event 1 =============================");
+        /**System.out.println("================================= Event 1 =============================");
         Event1 e1 = new Event1(graph.getStudent("v1"), graph.getStudent("v4"));
         e1.runEvent1();
 
@@ -35,7 +35,7 @@ public class Main {
 
         System.out.println("\n================================= Herd Immunity (Extra Features) =============================");
         HerdImmunity herdImmunity = new HerdImmunity(graph.getVertex(), 3);
-        herdImmunity.start();
+        herdImmunity.start();*/
 
         System.out.println("\n================================= Six Degrees (Extra Features) =============================");
         SixDegrees sixdegrees = new SixDegrees(graph);
